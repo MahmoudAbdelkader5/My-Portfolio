@@ -1,0 +1,18 @@
+<div class="skills-container">  
+  <h2>Skills</h2>  
+  <ul> 
+    @for (skill of skills; track $index) {
+      <li>  
+        <span class="skill-name">{{ skill.name }}</span>  
+        <div class="skill-bar">  
+          <div 
+            class="skill-level" 
+            [style.width.%]="skill.percentage" 
+            [style.background]="getSkillColor(skill.percentage)"
+          ></div>  
+        </div>  
+        <span class="skill-percentage">{{ skill.percentage }}%</span>  
+      </li> 
+    } 
+  </ul>  
+</div>

@@ -1,0 +1,10 @@
+<section class="portfolio">  
+  <h2>Portfolio</h2>  
+  <div class="projects">  
+    <div class="project" *ngFor="let project of projects; track $index">  
+      <img [src]="project.image" [alt]="project.name" class="project-image">  
+      <h3>{{ project.name }}</h3>  
+      <p>{{ project.description }}</p>  
+    </div>  
+  </div>  
+</section>

@@ -23,3 +23,29 @@
   button:hover {  
     background-color: #0056b3;  
   }  
+  .btn2 {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    margin: 5px; /* Add some margin between buttons */
+}
+
+.btn2:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn2:active {
+    transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+.mt-3 {
+    margin-top: 1rem; /* Add top margin if needed */
+}
